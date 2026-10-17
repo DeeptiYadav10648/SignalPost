@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-10-17T15:48:23Z",
+  "record_count": 1000,
+  "method": "Official paginated Enhetsregisteret API",
+  "source": "https://data.brreg.no/enhetsregisteret/api",
+  "validation": {
+    "records": 1000,
+    "distinct_org_numbers": 1000,
+    "valid": true,
+    "errors": []
+  },
+  "collection": {
+    "new_profiles_or_refreshes": 0,
+    "stored_profiles": 1000,
+    "rejected": 0,
+    "requests": 0,
+    "request_budget": 1800
+  },
+  "provenance_audit": {
+    "audited_at": "2026-10-17T16:12:03.112741Z",
+    "record_count": 1000,
+    "distinct_organisation_numbers": 1000,
+    "all_facts_have_official_record_urls": true,
+    "all_identifiers_match": true,
+    "live_source_attribution": "Existing records reference Brreg entity record URLs and have clustered retrieval timestamps from the earlier live collection run.",
+    "raw_source_responses_retained": false,
+    "legacy_fact_content_hashes_present": 0,
+    "independently_replay_verifiable": false,
+    "reason": "Original response bodies and per-response hashes were not retained in the legacy cache; counts and current structure are validated, but the old source snapshots cannot be reconstructed from stored artifacts."
+  },
+  "local_smoke_test": {
+    "run_id": "final-audit-100",
+    "input_count": 100,
+    "emitted_envelopes": 100,
+    "requests": 100,
+    "runtime_ms": 155296,
+    "states": {
+      "available": 100
+    },
+    "validation": {
+      "passed": true,
+      "checks": {
+        "count": true,
+        "input_order": true,
+        "terminal_states": true,
+        "evidence_references": true,
+        "evidence_urls_and_timestamps": true
+      },
+      "errors": []
+    },
+    "uncached_organisation_number": "812075462"
+  }
+}
